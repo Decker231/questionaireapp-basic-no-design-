@@ -5,31 +5,38 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#000000"
     tools:context=".MainActivity">
 
     <TextView
         android:id="@+id/txQuestion1"
-        android:layout_width="336dp"
-        android:layout_height="81dp"
+        android:layout_width="299dp"
+        android:layout_height="70dp"
         android:gravity="center"
-        android:text="Hello World!"
+        android:text="@string/txtmain1"
+        android:textColor="#F2F2F2"
+        android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.589"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.118" />
+        app:layout_constraintVertical_bias="0.26" />
 
     <Button
         android:id="@+id/btnMainNextpg"
-        android:layout_width="193dp"
-        android:layout_height="85dp"
+        android:layout_width="200dp"
+        android:layout_height="71dp"
+        android:backgroundTint="#0C2661"
         android:text="@string/btnNextPg"
         android:textSize="20sp"
+        app:cornerRadius="@dimen/ten"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.702" />
+        app:layout_constraintVertical_bias="0.706" />
 
     <TextView
         android:id="@+id/textView"
@@ -37,13 +44,58 @@
         android:layout_height="81dp"
         android:gravity="center"
         android:text="@string/txMainNextPG"
+        android:textColor="#FFFFFF"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.473"
+        app:layout_constraintVertical_bias="0.547"
         tools:ignore="TextSizeCheck" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="263dp"
+        android:layout_height="80dp"
+        android:gravity="center"
+        android:text="@string/txtmain2"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.403" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.004"
+        tools:itemCount="5"
+        android:padding="0dp"
+        android:layout_margin="0dp"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="0dp"
+        android:padding="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.998"
+        tools:itemCount="5" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

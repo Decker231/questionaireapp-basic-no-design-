@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">questionaireapp</string>
+    <string name="app_name">L4ur3nz_V1ru5</string>
     <string name="title_activity_scrolling">ScrollingActivity</string>
     <string name="large_text">
         "Material is the metaphor.\n\n"
@@ -94,7 +94,17 @@
     <string name="answer">Put Answer here</string>
     <string name="btnNextPg">Next Page</string>
     <string name="btnSubmit">Submit Answer</string>
-    <string name="txMainNextPG">Click Button below to go to next page</string>
-    <string name="q1Question">Unknown</string>
-    <string name="fin">Final Page</string>
+    <string name="txMainNextPG">You have no choice but to play my game</string>
+    <string name="q1Question">Elongated, Bumpy and Green World Eater from the Old World.</string>
+    <string name="fipg">Well Mr. Dude, you think you\'ve won?</string>
+    <string name="final2">I\'m not done yet</string>
+    <string name="q2">Digital Dog in a cat\'s Final Wish</string>
+    <string name="q3">\"Flying Lady\" - Mr. Kyle Mayuga</string>
+    <string name="q4">Min Liang-Tan\'s green snakes</string>
+    <string name="q5">Bouncy but eavesdropping smiley gift from Ralph</string>
+    <string name="txtmain1">You have been infected by</string>
+    <string name="txtmain2">The Laurenz Virus</string>
+    <string name="btnsteam">Click me</string>
+    <string name="hold">But wait, do you hear that?</string>
+
 </resources>
