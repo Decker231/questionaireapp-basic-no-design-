@@ -1,6 +1,7 @@
 package com.example.questionaireapp;
 
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
@@ -11,11 +12,15 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+
+import java.util.ArrayList;
 
 public class Q4 extends AppCompatActivity {
 
     EditText answer4;
-
+    MediaPlayer mediaPlayer;
     TextView textView4;
 
 
@@ -29,17 +34,35 @@ public class Q4 extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+        mediaPlayer = MediaPlayer.create(this, R.raw.valstrax);
+        mediaPlayer.start();
+        mediaPlayer.setLooping(true);
 
+        AnotherAdapter adapter;
+        ArrayList<Image> imageList;
+        RecyclerView recyclerView = findViewById(R.id.rView);
+        recyclerView.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false));
+        imageList = new ArrayList<>();
+
+        for (int i = 0; i < 7; i++) {
+            imageList.add(new Image(R.drawable.mewheeze));
+        }
+
+
+        adapter = new AnotherAdapter(imageList);
+        recyclerView.setAdapter(adapter);
 
     }
 
     public void q2Question(View view){
-        final String answer = "Unknown";
+        final String answer = "Razer";
 
-        answer4 = findViewById(R.id.edTxAnswer2);
+        answer4 = findViewById(R.id.edTxAnswer3);
         String kyleAnswer = answer4.getText().toString().trim();
 
         if(kyleAnswer.equalsIgnoreCase(answer)){
+            finish();
+            mediaPlayer.stop();
             Intent intent4 = new Intent(Q4.this, Q5.class);
             startActivity(intent4);
         }
