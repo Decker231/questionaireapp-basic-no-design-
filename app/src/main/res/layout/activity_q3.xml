@@ -25,7 +25,7 @@
 
     <EditText
         android:id="@+id/edTxAnswer3"
-        android:layout_width="406dp"
+        android:layout_width="390dp"
         android:layout_height="80dp"
         android:autofillHints=""
         android:ems="10"
@@ -35,7 +35,7 @@
         android:textColorHint="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintHorizontal_bias="0.476"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.23" />
@@ -47,6 +47,7 @@
         android:backgroundTint="#0C2661"
         android:onClick="q3Question"
         android:text="@string/btnSubmit"
+        android:textColor="#FFFFFF"
         android:textSize="20sp"
         app:cornerRadius="@dimen/ten"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -58,16 +59,16 @@
 
     <TextView
         android:id="@+id/txWrong3"
-        android:layout_width="406dp"
-        android:layout_height="80dp"
+        android:layout_width="390dp"
+        android:layout_height="73dp"
         android:textColor="#FFFFFF"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintHorizontal_bias="0.476"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.38" />
+        app:layout_constraintVertical_bias="0.379" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rView"

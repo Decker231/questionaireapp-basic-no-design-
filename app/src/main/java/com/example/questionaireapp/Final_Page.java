@@ -58,7 +58,7 @@ public class Final_Page extends AppCompatActivity {
             mediaPlayer1.stop();
             finish();
 
-            startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.youtube.com/watch?v=a_wNFT4j6qI")));
+            startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://store.steampowered.com/app/2246340/Monster_Hunter_Wilds/")));
         });
 
     }

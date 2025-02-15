@@ -25,8 +25,8 @@
 
     <EditText
         android:id="@+id/edTxAnswer3"
-        android:layout_width="406dp"
-        android:layout_height="80dp"
+        android:layout_width="375dp"
+        android:layout_height="81dp"
         android:autofillHints=""
         android:ems="10"
         android:hint="@string/answer"
@@ -47,6 +47,7 @@
         android:backgroundTint="#0C2661"
         android:onClick="q5Question"
         android:text="@string/btnSubmit"
+        android:textColor="#FFFFFF"
         android:textSize="20sp"
         app:cornerRadius="@dimen/ten"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -58,8 +59,8 @@
 
     <TextView
         android:id="@+id/txWrong5"
-        android:layout_width="406dp"
-        android:layout_height="80dp"
+        android:layout_width="370dp"
+        android:layout_height="81dp"
         android:textColor="#FFFFFF"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
